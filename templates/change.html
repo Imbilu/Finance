@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Password
+{% endblock %}
+
+{% block main %}
+    <form action="/change" method="post">
+        <div>
+            <input type="password" name="current_p" placeholder="Current Password">
+        </div>
+            <input type="password" name="new_p" placeholder="New Password">
+        <div>
+            <input type="password" name="new_p2" placeholder="Repeat Password">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
